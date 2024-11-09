@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bocquier Ludivine Portfolio - Plateforme d'exercice</title>
+    <link rel="stylesheet" href="projectStyle.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body class="plateformeBody">
+    
+    <header class="headerProject flex flexStart spaceBetween">
+        <div class="name">
+            <a href="index.html"></a>
+            <p class="subTitle">Designer UI/UX, front end & formatrice</p>
+        </div>
+        <a href="" class="contactBtn button buttonBlack">Contact</a>
+        
+    </header>
+
+    <button class="backButton" onclick="history.back()">← Retour</button>
+
+    <main class="flex flexStart">
+        <div class="projectDetails flex">
+            <h4>Plateforme d'exercices</h4>
+
+            <div class="comanditaire flex">
+                <p><span>Commanditaire:</span> La toile</p>
+                <p>Formation à destination des personnes éloignées de l’emploi, en reconversion professionnelle et aux jeunes de 17 à 25 ans sortis du système scolaire d’accéder à une formation technique, qualifiante et humaine.</p>
+            </div>
+
+            <div class="mission flex">
+                <p><span>Mission:</span>  Conception d’un espace regroupant exercices et concepts pour accompagner les heures de formation.</p>
+                <p>Dans le cadre de mes missions de formatrice au sein du programme La Toile, j’ai pour objectif de développer un environnement pédagogique complet et structuré. Cet espace d'apprentissage, destiné aux apprenants, rassemble des exercices pratiques et des concepts théoriques, permettant de renforcer et de consolider les connaissances acquises pendant les sessions de formation. L’idée est de proposer un support dynamique et interactif qui complète les cours, favorise l'autonomie des apprenants et encourage la mise en pratique des compétences clés dans leur domaine d’étude.</p>
+            </div>
+
+            <p><span>2023 à aujourd’hui</span></p>
+
+            <a href="https://ludivinebocquier.notion.site/Plateforme-d-exercices-829e62ce058e40e581cac29787b79d29?pvs=4" target="_blank" class="button buttonBlack">Visiter le site</a>
+
+
+        </div>
+
+       
+    <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"
+    css-mode="true" style="--swiper-theme-color: rgb(52, 52, 52);">
+
+        <swiper-slide>
+        <img class="projectImg" src="assets/plateformeFolder/plateforme1.png" alt="">
+        </swiper-slide>
+
+        <swiper-slide>
+            <img class="projectImg" src="assets/plateformeFolder/plateforme2.png" alt="">
+        </swiper-slide>
+
+        <swiper-slide>
+            <img class="projectImg" src="assets/plateformeFolder/plateforme3.png" alt="">
+        </swiper-slide>
+
+  </swiper-container>
+
+   
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+/* Import de la police depuis Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap");
+
+/* Définition des polices personnalisées */
+@font-face {
+font-family: 'dreamAvenue';
+src: url('assets/dream-Avenue.ttf') format('truetype');
+}
+
+:root {
+    --swiper-theme-color: #ff00f7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+  font-family:"Space Grotesk", sans-serif;
+  font-weight: var(--thin);
+  margin: 0;
+  min-height: 100vh;
+  color: rgb(52, 52, 52);
+  
+}
+
+a{
+    text-decoration: none;
+    color: rgb(52, 52, 52);
+}
+
+h4 {
+    font-family: 'dreamAvenue';
+    font-size: 2em;
+    margin: 0 0 10px 0;
+}
+
+p {font-size: 0.9rem;}
+
+span {font-weight: 800;}
+
+a:visited {text-decoration: none;}
+
+a:hover {text-decoration: none;}
+
+a:active {text-decoration: none;}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexEnd {
+    align-items: flex-end;
+}
+
+.flexCenter {align-items: center;}
+
+.flexStart{align-items: flex-start;}
+
+.spaceBetween {justify-content: space-between;}
+
+.cover {
+    background-size: cover;
+}
+
+.button {
+    padding: 3px 20px;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.buttonWhite {
+    border: 1px solid white;
+    color: white;
+}
+
+.buttonBlack {
+    border: 1px solid rgb(52, 52, 52);
+    color:rgb(52, 52, 52);
+}
+
+
+.button:hover {
+    background-color:rgb(52, 52, 52) ;
+    color: white;
+}
+
+.backButton {
+    margin-left: 35px;
+    border: none;
+    color: rgb(52, 52, 52);
+    width: fit-content;
+    border-radius: 50px;
+    background: rgba(51, 170, 51, 0);
+    font-size: 1rem;
+    cursor:pointer;
+}
+
+.backButton:hover {
+    color: white;
+}
+
+/* HEADER */
+.headerProject {
+    padding: 35px 35px 10px 35px;
+    width: 100%;
+}
+
+.subTitle {
+    font-family: 'dreamAvenue';
+    font-size: 2em;
+    margin: 0;
+    color:rgb(52, 52, 52);
+    font-weight: 800;
+}
+
+.title {
+    color:rgb(52, 52, 52);
+    font-size: 1em;
+}
+
+/* MAIN */ 
+
+.plateformeBody {
+    background-image: url(assets/plateformeFolder/bg-plateforme.png);
+    background-size: cover;
+    background-color: #ACA3D4;
+}
+
+.CpothierBody{
+    background-color: #F5D1CA;
+}
+
+.uinktoberBody{
+    background-color: #f6f6f6;
+}
+
+.projectDetails {
+    width: 30%;
+    padding: 35px;
+gap: 20px;
+flex-direction: column;}
+
+.comanditaire {gap:15px;}
+
+.mission {gap:15px;}
+
+.mySwiper{
+    width: 70%;
+    padding: 70px;
+}
+
+.projectImg {width: 100%;}
+
+.projectImgMiddle {width: 50%;}
+
+/* RESPONSIVE */ 
+/*SMARTPHONE*/
+@media screen and (max-width: 767px) {
+
+    .CPothier {background-position: right;}
+    .uinktober {background-position: right 35% bottom 45%;}
+    .plateforme {background-position: center;}
+    .innoResp {background-position: center;}
+    .parentsC {background-position: center;}
+    .incertain {background-position: center;}
+
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .buttonBlack {
+        color:#fff;
+        background-color: rgb(52, 52, 52);
+    }
+
+    .buttonWhite {
+        color: rgb(52, 52, 52);
+        background-color: #fff;
+    }
+
+    .name {
+        display: none; 
+    }
+
+    .contactBtn {
+        display: none;
+    }
+
+    .projectDetails {
+        width: 100%;
+    }
+
+    .mySwiper {
+        width: 100%;
+        padding: 0;
+    }
+
+}
+/*TABLETTE*/
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+
+
+}

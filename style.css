@@ -1,0 +1,282 @@
+/* Import de la police depuis Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap");
+
+/* Définition des polices personnalisées */
+@font-face {
+font-family: 'dreamAvenue';
+src: url('assets/dream-Avenue.ttf') format('truetype');
+}
+
+:root {
+    --swiper-theme-color: #ff00f7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+  position: relative;
+  height: 100%;
+  font-family:"Space Grotesk", sans-serif;
+  font-weight: var(--thin);
+  margin: 0;
+  color: rgb(52, 52, 52);
+ 
+}
+
+h1 {
+    font-family: 'dreamAvenue';
+    font-size: 4em;
+    margin: 0;
+    color: white;
+    }
+    
+h2 {
+    color: white;
+    }
+
+h3 {
+        font-family: 'dreamAvenue';
+        font-size: 2em;
+    }
+
+a{
+    text-decoration: none;
+    color: rgb(52, 52, 52);
+}
+
+a:visited {text-decoration: none;}
+
+a:hover {text-decoration: none;}
+
+a:active {text-decoration: none;}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexEnd {
+    align-items: flex-end;
+}
+
+.flexStart{align-items: flex-start;}
+
+.spaceBetween {justify-content: space-between;}
+
+.flexCenter {align-items: center;}
+
+.cover {
+    background-size: cover;
+}
+
+.button {
+    padding: 7px 20px;
+    width: fit-content;
+    border-radius: 50px;
+
+}
+
+.btnBox{
+    gap: 20px;
+}
+.buttonWhite {
+    border: 1px solid white;
+    color: white;
+}
+
+.buttonBlack {
+    border: 1px solid rgb(52, 52, 52);
+    color:rgb(52, 52, 52);
+}
+
+
+.button:hover {
+    background-color:rgb(52, 52, 52) ;
+    color: white;
+}
+
+/* HEADER */
+
+.headerHome{
+position: fixed;
+z-index: 10;
+padding: 35px;
+width: 100%;
+}
+
+
+/* SWIPE */
+
+swiper-container {
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+    }
+
+
+swiper-slide  {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+.description {
+    width: 30%;
+    margin-left: 35px;
+    flex-direction: column;
+    margin-bottom: 35px;
+    }
+    
+.description p {
+        margin: 15px 0;
+    }
+
+ul{
+    margin-top: 25px;
+    }
+
+li {
+    list-style: none;
+    }
+
+.CPothier{ 
+        background-image: url(assets/cpothier3.png);
+    }
+
+.plateforme {
+        background-image: url(assets/plateforme2.png)
+    }
+
+.innoResp {
+        background-image: url(assets/innoResponsable2.png);
+}
+
+.uinktober {
+    background-image: url(assets/inktiber.png);
+}
+
+.parentsC {
+    background-image: url(assets/parents.png);
+}
+
+.incertain {
+    background-image: url(assets/incertain.png);
+}
+
+.ovelay {
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(101, 101, 101, 0) 0%, rgba(255,255,255,0) 90%);
+}
+.swiper-slide {
+    height: 100vh;
+}
+/* SCROLL DOWN ANIMATION */ 
+
+.scroll-downs {
+        position: absolute;
+        top: calc(80%);
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width :20%;
+        height: 55px;
+        z-index:12;
+        text-align: center;
+        color: #fff;
+      }
+
+.mousey {
+        width: 3px;
+        padding: 10px 15px;
+        height: 35px;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        opacity: 0.75;
+        box-sizing: content-box;
+        margin: 0 auto 5px auto;
+      }
+
+.scroller {
+        width: 3px;
+        height: 10px;
+        border-radius: 25%;
+        background-color: #fff;
+        animation-name: scroll;
+        animation-duration: 2.2s;
+        animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+        animation-iteration-count: infinite;
+      }
+        @keyframes scroll {
+        0% { opacity: 0; }
+        10% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(15px); opacity: 0;}
+      }
+
+/* PROJECT PAGE */ 
+
+.headerHome {
+position: fixed;
+z-index: 10;
+padding: 35px;
+width: 100%;
+}
+
+
+/* RESPONSIVE */ 
+/*SMARTPHONE*/
+@media screen and (max-width: 767px) {
+
+    .CPothier {background-position: right;}
+    .uinktober {background-position: right 35% bottom 45%;}
+    .plateforme {background-position: center;}
+    .innoResp {background-position: center;}
+    .parentsC {background-position: center;}
+    .incertain {background-position: center;}
+
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .buttonBlack {
+        color:#fff;
+        background-color: rgb(52, 52, 52);
+    }
+
+    .buttonWhite {
+        color: rgb(52, 52, 52);
+        background-color: #fff;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+.scroll-downs {
+    display: none;
+}
+
+.ovelay {
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(101, 101, 101, 0) 0%, rgba(255,255,255,0.8) 90%);
+}
+}
+/*TABLETTE*/
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+
+
+}
