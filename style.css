@@ -275,11 +275,11 @@ width: 100%;
 }
 
 swiper-container {
-    height:100svh;
+    height:100dvh;
 }
 
 swiper-slide {
-    height: 100svh;
+    height: 100dvh;
 }
 
 
