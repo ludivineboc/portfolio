@@ -20,3 +20,9 @@ const swiper = new Swiper('.swiper', {
     },
   });
   
+
+  function setRealHeight() {
+    document.documentElement.style.setProperty('--real-vh', `${window.innerHeight}px`);
+}
+window.addEventListener('resize', setRealHeight);
+setRealHeight();
