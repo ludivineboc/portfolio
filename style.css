@@ -270,16 +270,16 @@ width: 100%;
 }
 
 .ovelay {
-    height: 100dvh;
+    height: calc(100vh - env(safe-area-inset-bottom));
     background: linear-gradient(180deg, rgba(101, 101, 101, 0) 0%, rgba(255,255,255,0.8) 90%);
 }
 
 swiper-container {
-    height:100dvh;
+    height:calc(100vh - env(safe-area-inset-bottom));
 }
 
 swiper-slide {
-    height: 100dvh;
+    height: calc(100vh - env(safe-area-inset-bottom));
 }
 
 
