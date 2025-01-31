@@ -19,7 +19,7 @@ src: url('assets/dream-Avenue.ttf') format('truetype');
 
 html,body {
   position: relative;
-  height: 100%;
+  height: 100dvh;
   font-family:"Space Grotesk", sans-serif;
   font-weight: var(--thin);
   margin: 0;
@@ -282,10 +282,7 @@ swiper-slide {
     height: calc(100vh - env(safe-area-inset-bottom));
 }
 
-.description{
-    margin-bottom: 100px;
-    
-}
+
 
 }
 /*TABLETTE*/
