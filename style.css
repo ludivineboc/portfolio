@@ -282,6 +282,10 @@ swiper-slide {
     height: calc(100vh - env(safe-area-inset-bottom));
 }
 
+.description{
+    margin-bottom: env(safe-area-inset-bottom, 100px);
+    
+}
 
 }
 /*TABLETTE*/
