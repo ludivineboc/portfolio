@@ -113,7 +113,7 @@ width: 100%;
 
 swiper-container {
       width: 100vw;
-      height: 100vh;
+      height: 100dvh;
       z-index: 1;
     }
 
@@ -121,7 +121,7 @@ swiper-container {
 swiper-slide  {
       display: block;
       width: 100vw;
-      height: 100vh;
+      height: 100dvh;
       object-fit: cover;
     }
 
@@ -169,11 +169,11 @@ li {
 }
 
 .ovelay {
-    height: 100vh;
+    height: 100dvh;
     background: linear-gradient(180deg, rgba(101, 101, 101, 0) 0%, rgba(255,255,255,0) 90%);
 }
 .swiper-slide {
-    height: 100vh;
+    height: 100dvh;
 }
 /* SCROLL DOWN ANIMATION */ 
 
