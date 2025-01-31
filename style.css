@@ -283,7 +283,7 @@ swiper-slide {
 }
 
 .description{
-    margin-bottom: env(safe-area-inset-bottom, 100px);
+    margin-bottom: 100px;
     
 }
 
