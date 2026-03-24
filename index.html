@@ -9,24 +9,29 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
 </head>
 
 <body>
 
-<header class="nav flex space-between container pt-10">
-    <div class="logo">Bocquier Ludivine</div>
+    <header class="nav flex space-between container pt-10">
+        <a href="index.html" class="decoration-none">
+            <div class="logo">Bocquier Ludivine</div>
+        </a>
 
-    <!-- bouton burger -->
-    <button id="burgerBtn" class="burger-btn ph ph-list"></button>
+        <!-- bouton burger -->
+        <button id="burgerBtn" class="burger-btn ph ph-list"></button>
 
-    <nav class="flex gap-12" id="navMenu">
-        <a href="#">Accueil</a>
-        <a href="#" class="inactive-link">À propos</a>
-    </nav>
-</header>
+        <nav class="flex gap-12 align-center" id="navMenu">
+            <a href="#">Accueil</a>
+            <a href="mailto:contact.ludivinebocqueir@gmail.com" class="inactive-link ml-20 contact-link">Contact</a>
+        </nav>
+    </header>
 
     <main>
 
@@ -37,7 +42,7 @@
         <section class="projects">
 
             <!-- SWIPER -->
-            <div class="swiper mySwiper">
+            <div class="swiper mySwiper swiperHome">
                 <div class="swiper-wrapper" id="carouselTrack"></div>
 
 
@@ -56,7 +61,8 @@
 
                         <!-- hasthag + fléche -->
                         <div class="flex space-between large-12 align-center">
-                            <div class=" flex gap-12 large-9 small-hashtag" id="hashtag"> <!-- les hashtag ici --> </div>
+                            <div class=" flex gap-12 large-9 small-hashtag" id="hashtag"> <!-- les hashtag ici -->
+                            </div>
 
                             <div class="info-controls large-3 flex space-between">
                                 <div class="swiper-button-prev swiper-btn large-4"></div>
@@ -87,15 +93,8 @@
 
         <div class=" mt-10 gap-12 txt-center">
             <a href="https://www.linkedin.com/in/ludivine-bocquier/" target="_blank" class="decoration-none">
-                <i class="ph ph-linkedin-logo"></i>
+                <i class="ph-fill ph-linkedin-logo"></i>
             </a>
-
-            <!--  
-            <a href="https://www.linkedin.com/in/ludivine-bocquier/" target="_blank" class="decoration-none">
-                <i class="ph ph-instagram-logo"></i>
-            </a>
-            -->
-
         </div>
     </footer>
 

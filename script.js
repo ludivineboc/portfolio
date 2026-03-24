@@ -10,42 +10,18 @@ const projects = [
         lien:"cpothier.html"
     },
     {
-        title: "Innovation responsable d'anticipation",
-        tags: ["Édito", "Recherche",  "Management de l'innovation"],
-        description: `
-            Rédaction d'un mémoire de recherche sur les activités d'innovation
-            responsable au sein du Lab ERASME de la métropole de Lyon.
-          `,
-        image: "asset/innoResponsable.jpg",
-        lien:"cpothier.html"
-    },
-    {
         title: "Ui•nktober",
         tags: ["UI/UX Design", "Prototypage", "Branding"],
         description: `Conception d'interfaces mobiles à l'occasion du inktober.`,
         image: "asset/uinktober.png",
-        lien:"cpothier.html"
+        lien:"uiInktober.html"
     },
     {
-        title: "Parents confinés",
-        tags: ["Édito", "UX Design", "fonr end"],
-        description: `Conception et maintenance d'une plateforme collaborative à
-            destination des parents confinés afin de vivre plus sereinement le
-            confinement avec leurs enfants.`,
-        image: "asset/parents.png",
-        lien:"cpothier.html"
-    },
-
-    {
-        title: "Voir l'incertain",
-        tags: ["Recherche en design", "Graphisme", "Créative coding"],
-        description: `
-            Conception d'une bibliothèque de formes graphiques. Travail est issu d'un mémoire de recherche
-            traitant la question de la représentation de l'incertitude dans les
-            projections climatiques.
-          `,
-        image: "asset/voirincertain.png",
-        lien:"cpothier.html"
+        title: "Blam Audio",
+        tags: ["Graphisme", "Packaging", "Branding"],
+        description: `Réalisation de packaging et recherche d'identités visuelle.`,
+        image: "asset/blamAudio.png",
+        lien:"blam.html"
     },
     {
         title: "Plateforme d'exercices",
@@ -56,7 +32,37 @@ const projects = [
             dispensé au makers Lab de L'em Lyon.
           `,
         image: "asset/plateforme.png",
-        lien:"cpothier.html"
+        lien:"plateforme.html"
+    },
+    {
+        title: "Parents confinés",
+        tags: ["Édito", "UX Design", "fonr end"],
+        description: `Conception et maintenance d'une plateforme collaborative à
+            destination des parents confinés afin de vivre plus sereinement le
+            confinement avec leurs enfants.`,
+        image: "asset/parents.png",
+        lien:"parentsConfines.html"
+    },
+        {
+        title: "Innovation responsable d'anticipation",
+        tags: ["Édito", "Recherche",  "Management de l'innovation"],
+        description: `
+            Rédaction d'un mémoire de recherche sur les activités d'innovation
+            responsable au sein du Lab ERASME de la métropole de Lyon.
+          `,
+        image: "asset/innoResponsable.jpg",
+        lien:"innovationResponsable.html"
+    },
+    {
+        title: "Voir l'incertain",
+        tags: ["Recherche en design", "Graphisme", "Créative coding"],
+        description: `
+            Conception d'une bibliothèque de formes graphiques. Travail est issu d'un mémoire de recherche
+            traitant la question de la représentation de l'incertitude dans les
+            projections climatiques.
+          `,
+        image: "asset/voirincertain.png",
+        lien:"voirIncertain.html"
     }
 ];
 
@@ -88,7 +94,7 @@ function updateProject(index) {
     
     info.innerHTML = `
     <p class="mb-10">${project.description}</p>
-    <a href="${project.lien}">View project ↗</a>
+    <a href="${project.lien}" class="decoration-none bold">En savoir plus ↗</a>
   `;
 }
 
@@ -123,7 +129,7 @@ const swiper = new Swiper(".mySwiper", {
 
 
 const swiperEl = document.querySelector(".mySwiper");
-const lastSlideWidth = 500; // largeur fixe de ta slide
+const lastSlideWidth = 300; // largeur fixe de ta slide
 const containerWidth = swiperEl.offsetWidth;
 
 swiperEl.style.paddingRight = `${containerWidth - lastSlideWidth - 100}px`; 
@@ -150,3 +156,6 @@ burgerBtn.addEventListener("click", () => {
         burgerBtn.classList.add("ph-list");
     }
 });
+
+
+
