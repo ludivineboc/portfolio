@@ -95,14 +95,23 @@ function updateProject(index) {
 // init swiper
 const swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
-    spaceBetween: 30,
-    centeredSlides: false, // tu gardes false
-    slidesOffsetBefore: 0, // ton margin-left est déjà dans le CSS
-    slidesOffsetAfter: 100, // 🔥 ajoute un offset égal au margin-left pour le dernier slide
+    spaceBetween: 30, // desktop
+    centeredSlides: false, 
+    slidesOffsetBefore: 0,
+    slidesOffsetAfter: 0, // on gère le padding en JS si nécessaire
 
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        0: {       // mobile
+            spaceBetween: 10, // moins d’espace entre les slides
+        },
+        501: {     // desktop
+            spaceBetween: 30,
+        }
     },
 
     on: {
@@ -122,3 +131,22 @@ swiperEl.style.paddingRight = `${containerWidth - lastSlideWidth - 100}px`;
 
 // init first project
 updateProject(0);
+
+
+
+
+const burgerBtn = document.getElementById("burgerBtn");
+const navMenu = document.getElementById("navMenu");
+
+burgerBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+
+    // changer l'icône
+    if (navMenu.classList.contains("show")) {
+        burgerBtn.classList.remove("ph-list");
+        burgerBtn.classList.add("ph-x");
+    } else {
+        burgerBtn.classList.remove("ph-x");
+        burgerBtn.classList.add("ph-list");
+    }
+});

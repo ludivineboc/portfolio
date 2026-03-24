@@ -53,33 +53,33 @@ h1 {
     font-size: 30px;
 }
 
-.bold{
+.bold {
     font-weight: 800;
 }
 
-.txt-center{
-        text-align: center;
+.txt-center {
+    text-align: center;
 }
 
-.inactive-link{
+.inactive-link {
     color: rgb(99, 99, 99) !important;
     text-decoration: none;
 }
 
-.decoration-none{
+.decoration-none {
     text-decoration: none;
 }
 
-.logo{
+.logo {
 
     font-size: 30px;
 }
 
-a{
+a {
     color: black;
 }
 
-a:visited{
+a:visited {
     color: black;
 }
 
@@ -159,13 +159,33 @@ a:visited{
     margin-bottom: 10px;
 }
 
-.pt-10{
+.pt-10 {
     padding-top: 10px;
 }
 
-.p-20{
+.p-20 {
     padding: 20px;
 }
+
+/* HEADER */
+/* bouton burger */
+.burger-btn {
+    display: none; /* affiché seulement sur mobile */
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.burger-btn {
+    transition: transform 0.3s ease;
+}
+
+/* exemple : rotation légère quand on clique */
+.burger-btn.ph-x {
+    transform: rotate(90deg);
+}
+
 
 /* HERO */
 
@@ -246,6 +266,7 @@ a:visited{
     position: relative !important;
     height: fit-content !important;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
     color: black;
@@ -262,6 +283,87 @@ footer {
 
 
 
-.bg-red{
+
+.bg-red {
     background-color: red;
+}
+
+
+
+/*Smartphones*/
+@media all and (max-width: 500px) {
+
+
+
+    header {
+        padding: 20px;
+
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .swiper {
+        margin-left: 20px;
+    }
+
+    .swiper-slide {
+        width: 330px !important;
+    }
+
+    .project-info {
+        width: 330px;
+        margin-left: 20px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .small-hashtag{
+        font-size: 15px;
+    }
+
+
+    nav#navMenu {
+        display: none; /* menu caché par défaut */
+        position: absolute;
+        top: 70px; /* sous le header */
+        right: 20px;
+        background: white;
+        flex-direction: column;
+        width: 200px;
+        padding: 10px 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    nav#navMenu.show {
+        display: flex; /* affiché quand on clique sur le burger */
+    }
+
+    .burger-btn {
+        display: block; /* visible sur mobile */
+    }
+
+}
+
+/*Tablets*/
+@media all and (max-width: 1200px) {
+
+    header{
+        padding: 40px;
+    }
+
+    .hero{
+        padding: 40px;
+    }
+
+
 }

@@ -16,13 +16,17 @@
 
 <body>
 
-    <header class="nav flex space-between container pt-10">
-        <div class="logo">Bocquier Ludivine</div>
-        <nav class="flex gap-12">
-            <a href="#">Accueil</a>
-            <a href="#" class="inactive-link">À propos</a>
-        </nav>
-    </header>
+<header class="nav flex space-between container pt-10">
+    <div class="logo">Bocquier Ludivine</div>
+
+    <!-- bouton burger -->
+    <button id="burgerBtn" class="burger-btn ph ph-list"></button>
+
+    <nav class="flex gap-12" id="navMenu">
+        <a href="#">Accueil</a>
+        <a href="#" class="inactive-link">À propos</a>
+    </nav>
+</header>
 
     <main>
 
@@ -52,7 +56,7 @@
 
                         <!-- hasthag + fléche -->
                         <div class="flex space-between large-12 align-center">
-                            <div class=" flex gap-12 large-9" id="hashtag"> <!-- les hashtag ici --> </div>
+                            <div class=" flex gap-12 large-9 small-hashtag" id="hashtag"> <!-- les hashtag ici --> </div>
 
                             <div class="info-controls large-3 flex space-between">
                                 <div class="swiper-button-prev swiper-btn large-4"></div>
