@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+</head>
+
+<body>
+
+    <header class="nav flex space-between container pt-10">
+        <div class="logo">Bocquier Ludivine</div>
+        <nav class="flex gap-12">
+            <a href="#">Accueil</a>
+            <a href="#" class="inactive-link">À propos</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero container">
+            <h1>UI/UX Designer,<br>front end & teacher</h1>
+        </section>
+
+        <section class="projects">
+
+            <!-- SWIPER -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="carouselTrack"></div>
+
+
+
+            </div>
+
+            <!-- INFOS -->
+            <div class="project-info">
+
+                <div class="top-info flex space-between mt-10 mb-10 align-center p-20">
+
+                    <!-- box titre + hastag / fleche -->
+                    <div class="title-hashtag large-12 ">
+
+                        <div class="large-12 mb-10" id="title"> <!-- le titre du projet --></div>
+
+                        <!-- hasthag + fléche -->
+                        <div class="flex space-between large-12 align-center">
+                            <div class=" flex gap-12 large-9" id="hashtag"> <!-- les hashtag ici --> </div>
+
+                            <div class="info-controls large-3 flex space-between">
+                                <div class="swiper-button-prev swiper-btn large-4"></div>
+                                <div class="swiper-button-next swiper-btn large-4"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="info-content p-20" id="projectInfo"></div>
+
+
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="mt-50">
+        <p class=" large-12 txt-center pt-10">Bocquier Ludivine ©2025</p>
+
+        <div class=" mt-10 gap-12 txt-center">
+            <a href="https://www.linkedin.com/in/ludivine-bocquier/" target="_blank" class="decoration-none">
+                <i class="ph ph-linkedin-logo"></i>
+            </a>
+
+            <!--  
+            <a href="https://www.linkedin.com/in/ludivine-bocquier/" target="_blank" class="decoration-none">
+                <i class="ph ph-instagram-logo"></i>
+            </a>
+            -->
+
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
