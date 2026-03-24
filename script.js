@@ -74,9 +74,9 @@ const hashtag = document.getElementById("hashtag")
 // inject slides
 projects.forEach(project => {
     const div = document.createElement("div");
-    div.classList.add("swiper-slide", "project-card");
+    div.classList.add("swiper-slide", "project-card", "swiper-lazy-preloader");
 
-    div.innerHTML = `<a href="${project.lien}" class="img-link"><img src="${project.image}" alt=""></a>`;
+    div.innerHTML = `<a href="${project.lien}" class="img-link"><img src="${project.image}" alt="" loading="lazy"></a>`;
 
     track.appendChild(div);
 });
