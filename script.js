@@ -76,7 +76,7 @@ projects.forEach(project => {
     const div = document.createElement("div");
     div.classList.add("swiper-slide", "project-card" );
 
-    div.innerHTML = `<a href="${project.lien}" class="img-link"><img src="${project.image}" alt="" loading="lazy"></a>`;
+    div.innerHTML = `<a href="${project.lien}" class="img-link"><img src="${project.image}" alt="" ></a>`;
 
     track.appendChild(div);
 });
