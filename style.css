@@ -333,6 +333,10 @@ footer {
 
 @media all and (max-width: 500px) {
 
+    body {
+        padding: 0px !important;
+    }
+
     /*dimensions*/
 
     .small-1 {
