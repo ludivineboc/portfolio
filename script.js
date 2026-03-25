@@ -35,13 +35,13 @@ const projects = [
         lien:"plateforme.html"
     },
     {
-        title: "Parents confinés",
-        tags: ["Édito", "UX Design", "fonr end"],
-        description: `Conception et maintenance d'une plateforme collaborative à
-            destination des parents confinés afin de vivre plus sereinement le
-            confinement avec leurs enfants.`,
-        image: "asset/parents.png",
-        lien:"parentsConfines.html"
+        title: "Plateforme de cours en ligne",
+        tags: ["Pédagogie", "UX design", "Éditorialisation"],
+        description: `
+            Conception et maintenance d’un espace de cours en ligne, avec mise à disposition de ressources et de consignes dans le cadre d’un cours dédié à la conception de portfolios en ligne.
+          `,
+        image: "asset/cours-portfolio.png",
+        lien:"coursPortfolio.html"
     },
         {
         title: "Innovation responsable d'anticipation",
@@ -63,7 +63,15 @@ const projects = [
           `,
         image: "asset/voirincertain.png",
         lien:"voirIncertain.html"
-    }
+    },{
+        title: "Parents confinés",
+        tags: ["Édito", "UX Design", "fonr end"],
+        description: `Conception et maintenance d'une plateforme collaborative à
+            destination des parents confinés afin de vivre plus sereinement le
+            confinement avec leurs enfants.`,
+        image: "asset/parents.png",
+        lien:"parentsConfines.html"
+    },
 ];
 
 const track = document.getElementById("carouselTrack");
