@@ -1,13 +1,12 @@
 const projects = [
     {
-        title: "CPothier Makeup",
-        tags: ["UI/UX Design", "Conception d'identité", "Front end", "CMS"],
+        title: "Site du Lab des espaces publics",
+        tags: ["UI/UX Design", "Chefferie de projet", "Front end", "Wordpress"],
         description: `
-              Refonte d'identité et développement front end du site de la
-              maquilleuse profesionnel Christine Pothier.
+              Réflexion stratégique et prototypage d’un site web à destination des chefs de projet en urbanisme de la Métropole de Lyon.
             `,
-        image: "asset/cpothier.png",
-        lien:"cpothier.html"
+        image: "asset/lab-eps-vignette.png",
+        lien:"lab-eps.html"
     },
     {
         title: "Ui•nktober",
@@ -22,6 +21,15 @@ const projects = [
         description: `Réalisation de packaging et recherche d'identités visuelle.`,
         image: "asset/blamAudio.png",
         lien:"blam.html"
+    },{
+        title: "CPothier Makeup",
+        tags: ["UI/UX Design", "Conception d'identité", "Front end", "CMS"],
+        description: `
+              Refonte d'identité et développement front end du site de la
+              maquilleuse profesionnel Christine Pothier.
+            `,
+        image: "asset/cpothier.png",
+        lien:"cpothier.html"
     },
     {
         title: "Plateforme d'exercices",
@@ -63,7 +71,9 @@ const projects = [
           `,
         image: "asset/voirincertain.png",
         lien:"voirIncertain.html"
-    },{
+    },
+    
+    /*{
         title: "Parents confinés",
         tags: ["Édito", "UX Design", "fonr end"],
         description: `Conception et maintenance d'une plateforme collaborative à
@@ -71,7 +81,7 @@ const projects = [
             confinement avec leurs enfants.`,
         image: "asset/parents.png",
         lien:"parentsConfines.html"
-    },
+    },*/
 ];
 
 const track = document.getElementById("carouselTrack");

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+</head>
+
+<body>
+
+
+    <header class="nav flex space-between container pt-10">
+        <a href="index.html" class="decoration-none">
+            <div class="logo">Bocquier Ludivine</div>
+        </a>
+
+        <!-- bouton burger -->
+        <button id="burgerBtn" class="burger-btn ph ph-list"></button>
+
+        <nav class="flex gap-12 align-center" id="navMenu">
+            <a href="index.html">Accueil</a>
+            <a href="mailto:contact.ludivinebocqueir@gmail.com" class="inactive-link ml-20 contact-link">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero container ">
+            <a href="index.html" class="decoration-none mb-10 flex gap-12 align-center retour-btn">
+                <i class="ph-fill ph-arrow-circle-left arrow"></i> Retour
+            </a>
+            <h2>Site web du Lab des espaces publics</h2>
+        </section>
+
+        <section class="project-content container flex">
+
+            <!-- gauche -->
+            <section class="colonne-gauche large-4 small-12">
+
+                <p> <span class="bold">Commanditaires :</span> Métropole de Lyon - Direction maitrise d'ouvrage urbaine
+                </p>
+
+                <p class="mt-30">
+                    <span class="bold">Mission :</span> Réflexion stratégique et prototypage d’un site web à destination
+                    des chefs de projet en urbanisme de la Métropole de Lyon.<br><br>
+
+                    Conception du prototype du site du Lab des espaces publics, un dispositif favorisant créativité,
+                    expérimentation et collaboration.<br><br>
+
+                    Analyse des besoins utilisateurs, création de l’arborescence et réalisation d’un prototype
+                    interactif sur Figma.<br><br>
+
+                    Puis, en tant que cheffe de projet et designer UI/UX, coordination des équipes design, éditoriales
+                    et techniques (WordPress), avec un focus sur la mise en ligne, la maintenance et l’amélioration
+                    continue.<br><br>
+
+                    Projet intégré à un écosystème plus large (wiki et outils) dédié à la diffusion de méthodes de
+                    projet frugales.
+                </p>
+
+                <br>
+                <p class="bold">2023 à aujourd'hui</p>
+
+                <a href="https://labdesespacespublics.grandlyon.com/" class="decoration-none bold mt-50"
+                    target="_blank">Visiter le site ↗</a>
+
+
+
+            </section>
+
+            <!-- droite -->
+            <section class="large-8  flex-column align-center image-container small-12 ">
+                <img src="asset/lab-eps/lab-eps-vignette.png" alt="" class="large-8 mb-30 image-projet small-10">
+                <img src="asset/lab-eps/lab-eps-projets.png" alt="" class="large-8 mb-30 image-projet small-10">
+                <img src="asset/lab-eps/lab-eps-boite.png" alt="" class="large-8 mb-30 image-projet small-10">
+                <img src="asset/lab-eps/lab-eps-phone.png" alt="" class="large-8 mb-30 image-projet small-10">
+                <img src="asset/lab-eps/arborescence envisagee.png" alt="" class="large-8 mb-30 image-projet small-10">
+                <img src="asset/lab-eps/composants.png" alt="" class="large-8 mb-30 image-projet small-10">
+                <img src="asset/lab-eps/maquette.png" alt="" class="large-8 mb-30 image-projet small-10">
+
+            </section>
+
+            <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-img" id="lightboxImg">
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer class="mt-50">
+        <p class=" large-12 txt-center pt-10">Bocquier Ludivine ©2025</p>
+
+        <div class=" mt-10 gap-12 txt-center">
+            <a href="https://www.linkedin.com/in/ludivine-bocquier/" target="_blank" class="decoration-none">
+                <i class="ph-fill ph-linkedin-logo"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="script2.js" defer></script>
+
+
+</body>
+
+</html>
