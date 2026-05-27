@@ -431,7 +431,7 @@ footer {
     }
 
     .project-info {
-        width: 330px;
+        width: 100%;
         margin-left: 20px;
     }
 
@@ -550,6 +550,3 @@ footer {
   overflow: hidden;
 }
 
-.project-info{
-        width: 100%;
-}
