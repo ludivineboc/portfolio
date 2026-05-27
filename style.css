@@ -335,9 +335,12 @@ footer {
 
 @media all and (max-width: 500px) {
 
+
     body {
         padding: 0px !important;
+         overflow-x: hidden;
     }
+
 
     /*dimensions*/
 
@@ -392,7 +395,9 @@ footer {
     /*header*/
 
     header {
-        padding: 20px;
+        padding: 20px 20px !important;
+        gap: 12px;
+        justify-content: left;
     }
 
     .hero {
@@ -538,4 +543,13 @@ footer {
     font-size: 40px;
     color: white;
     cursor: pointer;
+}
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-info{
+        width: 100%;
 }
