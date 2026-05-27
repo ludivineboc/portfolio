@@ -252,6 +252,7 @@ a:visited {
     overflow: visible;
 }
 
+
 /* swiper container */
 .swiper {
     overflow: visible;
@@ -328,6 +329,23 @@ footer {
     border-top: solid rgb(222, 222, 222) 1px;
 }
 
+
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media all and (max-width: 1200px) {
+
+    header {
+        padding: 40px;
+    }
+
+    .hero {
+        padding: 40px;
+    }
+
+
+}
 
 /* =========================
    RESPONSIVE - MOBILE
@@ -431,9 +449,14 @@ footer {
     }
 
     .project-info {
-        width: 100%;
+        width: 90%;
         margin-left: 20px;
     }
+
+    .projects{
+    overflow: hidden;
+}
+
 
     /* menu burger */
     nav#navMenu {
@@ -477,22 +500,7 @@ footer {
 }
 
 
-/* =========================
-   RESPONSIVE - TABLET
-========================= */
 
-@media all and (max-width: 1200px) {
-
-    header {
-        padding: 40px;
-    }
-
-    .hero {
-        padding: 40px;
-    }
-
-
-}
 
 
 
@@ -543,10 +551,5 @@ footer {
     font-size: 40px;
     color: white;
     cursor: pointer;
-}
-
-.swiper {
-  width: 100%;
-  overflow: hidden;
 }
 
